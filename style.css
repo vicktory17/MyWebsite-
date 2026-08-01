@@ -113,3 +113,72 @@ a button {
 a button:hover {
     background: navy;
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .project {
+    background: #222;
+    color: white;
+}
+
+.dark-mode nav {
+    background: #000080;
+}
+
+.skill-bar {
+    width: 90%;
+    max-width: 400px;
+    background: #ddd;
+    border-radius: 20px;
+    margin: 10px auto 20px;
+    overflow: hidden;
+}
+
+.skill {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    animation: fillBar 2s ease;
+}
+
+.html {
+    width: 90%;
+    background: #e44d26;
+}
+
+.css {
+    width: 80%;
+    background: #264de4;
+}
+
+.js {
+    width: 60%;
+    background: #f7df1e;
+    color: black;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
