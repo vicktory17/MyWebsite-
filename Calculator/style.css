@@ -1,229 +1,85 @@
 body {
-    background-color: #f4f9ff;
     font-family: Arial, sans-serif;
-    text-align: center;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background: #222;
     padding: 20px;
+    border-radius: 15px;
+    width: 300px;
 }
 
-h1 {
-    color: darkblue;
-}
-
-h2 {
-    color: #444;
-}
-
-    img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid darkblue;
-}
-
-p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: darkblue;
-    color: white;
-    margin: 10px auto;
-    padding: 10px;
-    width: 200px;
-    border-radius: 8px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 18px;
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 15px;
     border: none;
-    border-radius: 8px;
-    background: darkblue;
-    color: white;
-}
-
-nav {
-    background-color: darkblue;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 18px;
-}
-
-.project {
-    background: white;
-    padding: 20px;
-    margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px gray;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-footer {
-    background: darkblue;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 16px;
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
 button {
-    transition: 0.3s;
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
 }
 
 button:hover {
-    background: royalblue;
     transform: scale(1.05);
 }
 
-a button {
-    background: darkblue;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-a button:hover {
-    background: navy;
-}
-
-.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-.dark-mode .project {
-    background: #222;
-    color: white;
-}
-
-.dark-mode nav {
-    background: #000080;
-}
-
-.skill-bar {
-    width: 90%;
-    max-width: 400px;
+button:hover {
     background: #ddd;
-    border-radius: 20px;
-    margin: 10px auto 20px;
-    overflow: hidden;
 }
 
-.skill {
+.clear {
+    background: blue;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    animation: fillBar 2s ease;
 }
 
-.html {
-    width: 90%;
-    background: #e44d26;
-}
-
-.css {
-    width: 80%;
-    background: #264de4;
-}
-
-.js {
-    width: 60%;
-    background: #f7df1e;
-    color: black;
-}
-
-@keyframes fillBar {
-    from {
-        width: 0;
-    }
-}
-
-section {
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 8px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #0a0a8f;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff9800;
-    transform: scale(1.2);
-}
-
-.social-links i {
-    margin-right: 8px;
-}
-
-.intro {
-    font-size: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    line-height: 1.6;
-    color: #555;
-}
-
-.dark-mode .intro {
-    color: #ddd;
-}
-
-.hire-btn {
+.equal {
     background: #28a745;
     color: white;
-    padding: 15px 35px;
-    border: none;
-    border-radius: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.hire-btn:hover {
-    background: #218838;
-    transform: scale(1.05);
-      }
+.operator {
+     background: #ffa500;
+     color: white;
+}
+     
+.operator {
+      background:#ffa500;
+      color:white;
+} 
+
+.operator { 
+      background: #ffa500;
+      color:white;
+} 
+
+.operator {
+      background: #ffa500;
+      color:white;
+}
+
+     
+
+
