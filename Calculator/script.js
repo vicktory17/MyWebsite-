@@ -1,16 +1,18 @@
-function greet() {
-    alert("Hello Victory! Welcome to JavaScript!");
+let display = document.getElementById("display");
+
+function append(value) {
+    display.value += value;
 }
 
-function sayHello() {
-    alert("Hello! Thanks for visiting my portfolio.");
+function clearDisplay() {
+    display.value = "";
 }
 
-function toggleMode() {
-    document.body.classList.toggle("dark-mode");
-}
-
-function sayHello() {
-    alert("Hello! Thanks for visiting my portfolio.");
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = "Error";
+    }
 }
 
