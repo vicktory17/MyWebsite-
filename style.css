@@ -228,3 +228,26 @@ section {
     background: #218838;
     transform: scale(1.05);
 }
+
+#stats {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+#stats .project {
+    padding: 20px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
